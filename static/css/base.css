@@ -1,0 +1,30 @@
+* { font-size: 15px; }
+
+body {
+  font-family: 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+}
+
+/* display */
+.none { display: none !important; }
+
+@media screen and (max-width: 767px) {
+    .pc-only { display: none !important; }
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-only { display: none !important; }
+}
+
+/* 정렬 */
+.flex-column { display: flex; flex-direction: column; }
+.align-center { align-items: center; }
+
+/* animation */
+.fade { opacity: 0; transition: opacity .8s linear, transform .8s ease; }
+.fade.in { opacity: 1; }
+.down { transform: translateY(20px); }
+.up { transform: translateY(0); }
+.fade.left { transform: translateX(-20px); }
+.fade.left.show { transform: translateX(0); }
+.fade.right { transform: translateX(20px); }
+.fade.right.show { transform: translateX(0); }

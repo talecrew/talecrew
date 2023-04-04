@@ -1,0 +1,32 @@
+<!doctype html>
+
+{% load static %}
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HOME | TALECREW</title>
+
+    <link rel="stylesheet" href="{% static 'css/font.css' %}?v={% include 'versioning.html' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}?v={% include 'versioning.html' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}?v={% include 'versioning.html' %}" type="text/css">
+    <script src="{% static 'js/jquery.js' %}?v={% include 'versioning.html' %}"></script>
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
+    {% block header %}
+    {% endblock %}
+
+    {% block content %}
+    {% endblock %}
+
+    {% block footer %}
+    {% endblock %}
+
+    {% block script %}
+    {% endblock %}
+</body>
+</html>

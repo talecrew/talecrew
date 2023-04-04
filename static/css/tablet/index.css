@@ -1,0 +1,73 @@
+header {
+    padding: 0 4rem;
+}
+
+#background {
+    background: url('../../img/bg-mobile.webp') no-repeat;
+    background-position-x: 25%;
+    background-size: cover;
+}
+
+section { padding: 3rem; padding-bottom: 0; }
+
+#intro .logo { margin-top: 5rem; margin-bottom: 2rem; }
+#intro .logo img { min-width: 200px; }
+#intro .text { margin-top: 3rem; }
+#intro .text p { font-weight: 500; font-size: 3rem; color: #ffffff; }
+#intro .text p:not(:last-child) { margin-bottom: 1rem; }
+
+#about .about-content { padding: 4rem 0 2rem 0; }
+#about .business-content { padding: 0 0 12rem 0; }
+#about .title { width: 100%; }
+#about .title h2 { font-size: 2rem; }
+#about .bottom-line { width: 60px; height: .2rem; }
+#about .title svg {
+    z-index: 0;
+    left: 22rem;
+    top: -5.5rem;
+    position: absolute;
+    width: 50px;
+    opacity: .9;
+}
+
+#about .content-wrap { padding: 0; margin-top: 3rem; }
+#about .content-wrap h3 { font-size: 1.5rem; }
+#about .content-wrap p { word-wrap: break-word; word-wrap: keep-all; line-height: 2rem; }
+#about .content-wrap .about-text { font-size: 1.4rem; line-height: 2rem; }
+#about .content-wrap .business-text { text-align: center; font-weight: 600; font-size: 1.5rem; line-height: 1.7rem; }
+#about .business-content .content svg { width: 100px; height: 140px; }
+
+#novel { padding: 4rem 1rem; }
+.novel-title-wrap { padding-left: 3rem; }
+#novel .novel-list li .desc-wrap .title { margin-top: 2rem; }
+#novel .novel-list li .desc-wrap .desc { margin-bottom: 2rem; }
+
+#recruit .main-text {
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: rgba(0, 0, 0, 0.4) 0px 4px 5px;
+    margin-bottom: .8rem;
+}
+
+#recruit { padding: 3rem; }
+#recruit .sub-text { font-size: 1rem; }
+#recruit .recruit-right button { font-size: 1.2rem; }
+
+.character { display: none; }
+#core-values { padding-top: 2rem; padding-bottom: 2rem; }
+#core-values .core-values-title { font-size: 1.4rem; line-height: 1.6rem; }
+#core-values .content-table tr { line-height: 1.2rem; }
+#core-values .content-table .key,
+#core-values .content-table .value { font-weight: 500; }
+#core-values .content-table .key { font-size: 1.2rem; display: block; width: 100%; margin-bottom: .4rem; }
+#core-values .content-table .key.right { text-align: left; }
+#core-values .content-table .value { font-size: 1rem; display: block; width: 100%; padding-left: 0; margin-bottom: 1.2rem; }
+
+#vision { background: rgb(255, 222, 95); padding-top: 2rem; padding-bottom: 2rem; }
+#vision .content-wrap {
+    font-size: 2rem;
+}
+
+footer { padding: 4rem 2rem; }
+footer .left img { width: 150px; }
+footer .right { margin-left: 4rem; }

@@ -1,0 +1,80 @@
+header {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: rgb(255, 255, 255, 0.8);
+    width: 100%;
+    transition: opacity .5s ease !important;
+    padding: 1rem 1rem;
+}
+
+header .header-wrap { left: 0; display: flex; align-items: center; justify-content: space-between; }
+header .header-wrap .logo { display: none; }
+header .header-wrap .menu { display: flex; }
+header .header-wrap .menu li { margin: 0 1.3rem; color: #414141; cursor: pointer; }
+header .header-wrap .menu li:hover { color: #FCCC29; }
+
+section { padding: 1rem 1.5rem; padding-bottom: 0; }
+
+#intro .logo { margin-top: 5rem; margin-bottom: 2rem; }
+#intro .logo img { min-width: 200px; }
+#intro .text p { font-weight: 500; font-size: 2rem; color: #ffffff; }
+#intro .text p:not(:last-child) { margin-bottom: 1rem; }
+
+#about .title { width: 100%; }
+#about .title h2 { font-size: 1.4rem; }
+#about .bottom-line { width: 60px; height: .2rem; }
+#about .title svg {
+    z-index: 0;
+    left: 6.2rem;
+    top: -6rem;
+    position: absolute;
+    width: 50px;
+    opacity: .9;
+}
+
+#about .content-wrap { padding: 0; margin-top: 3rem; }
+#about .content-wrap h3 { font-size: 1.2rem; }
+#about .content-wrap p { word-wrap: break-word; word-wrap: keep-all; line-height: 2rem; }
+#about .content-wrap .about-text { font-size: 1.1rem; line-height: 1.5rem; }
+#about .content-wrap .business-text { text-align: center; font-weight: 600; font-size: 1rem; line-height: 1.2rem; }
+#about .business-content .content svg { width: 60px; height: 80px; }
+.character { display: none; }
+
+#novel { padding: 4rem 1rem; }
+.novel-title-wrap { padding-left: 1.5rem; }
+.novel-title { margin: 0; }
+
+#novel .novel-list li .desc-wrap:hover { opacity: 0; }
+#novel .novel-list li .desc-wrap .title { font-size: .8rem; margin: 1rem auto .5rem; }
+#novel .novel-list li .desc-wrap .desc { font-size: .8rem; }
+
+#recruit { padding: 3.5rem 1.5rem; }
+#recruit .main-text { font-size: 1.3rem; }
+#recruit .sub-text { font-size: .8rem; }
+#recruit .recruit-right button { font-size: .8rem; padding: 1rem .8rem; }
+
+#recruit .recruit-right button:hover {
+    opacity: 1;
+    transform: none;
+    box-shadow: 2px 2px 5px #c1c1c1;
+}
+
+#core-values { padding-top: 2rem; padding-bottom: 2rem; }
+#core-values .core-values-title { font-size: 1rem; }
+#core-values .content-table tr { line-height: 1.2rem; }
+#core-values .content-table .key,
+#core-values .content-table .value { font-weight: 500; }
+#core-values .content-table .key { font-size: .9rem; display: block; width: 100%; margin-bottom: .4rem; }
+#core-values .content-table .key.right { text-align: left; }
+#core-values .content-table .value { font-size: .8rem; display: block; width: 100%; padding-left: 0; margin-bottom: 1.2rem; }
+
+#vision .content-wrap { font-size: 1.2rem; line-height: 1.5rem; }
+
+footer { padding: 2rem; }
+footer p { font-size: .8rem; }
+footer .content-wrap .top { margin-bottom: 1.2rem; }
+footer .left img { width: 100px; }
+footer .right { margin-left: 2rem; }

@@ -1,0 +1,270 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/slick.css' %}">
+<link rel="stylesheet" href="{% static 'css/slick-theme.css' %}">
+<link rel="stylesheet"
+      href="{% static 'css/pc/index.css' %}?v={% include 'versioning.html' %}"
+      type="text/css">
+<link rel="stylesheet"
+      media="screen and (max-width: 1024px)"
+      href="{% static 'css/tablet/index.css' %}?v={% include 'versioning.html' %}"/>
+<link rel="stylesheet"
+      media="screen and (max-width: 767px)"
+      href="{% static 'css/mobile/index.css' %}?v={% include 'versioning.html' %}"/>
+
+{# slick.js #}
+<style>
+    /*
+        * Bootstrap Icons v1.6.1
+        * Copyright (c) 2021-2022 Bootstrap Icons
+        * Licensed under MIT (https://github.com/twbs/icons/blob/main/LICENSE.md)
+    */
+
+    .slick-list { padding: 0 !important; }
+    .slick-slide { text-align: center; overflow: hidden; }
+    .slick-slide img { margin: 0 auto; width: 240px; height: auto; }
+
+    .slick-dots { bottom: -18%; }
+    .slick-dots li button:before { opacity: 1; font-size: 30px; color: #ECEEE8; }
+    .slick-dots li.slick-active button:before { color: #FBCE28; }
+
+    #novel .novel-list li .desc-wrap { width: 240px; }
+
+    @media screen and (max-width: 1300px) {
+        .slick-slide img { width: 200px; height: auto; }
+        #novel .novel-list li .desc-wrap { width: 200px; }
+    }
+
+    @media screen and (max-width: 1200px) {
+        .slick-list { margin-right: 4px; }
+        .slick-slide img { width: 180px; height: auto; }
+    }
+
+    @media screen and (max-width: 600px) {
+
+        .slick-arrow { display: none !important; }
+        .slick-list { margin-right: 4px; }
+        .slick-slide img { width: 100px; height: auto; }
+        #novel .novel-list li .desc-wrap { width: 100px; }
+    }
+</style>
+{% endblock %}
+
+{% block header %}
+<header class="fade">
+    <div class="header-wrap">
+        <div class="logo">
+            <img src="{% static 'img/logo-yellow.webp' %}" alt="header logo">
+        </div>
+        <ul class="menu">
+            <li data-move_to="intro">HOME</li>
+            <li data-move_to="about">ABOUT</li>
+            <li data-move_to="novel">WORKS</li>
+            <li data-move_to="recruit">RECRUIT</li>
+        </ul>
+    </div>
+</header>
+{% endblock %}
+
+{% block content %}
+<main>
+    <div id="background"></div>
+    <section id="intro">
+        <div class="logo fade">
+            <img src="{% static 'img/logo-yellow.webp' %}" alt="intro section brand logo">
+        </div>
+        <div class="text fade down">
+            <p>이 시대의 재미를 책임질</p>
+            <p>효율적 창의집단,</p>
+            <p>테일크루입니다.</p>
+        </div>
+    </section>
+    <section id="about">
+        <div class="about-content">
+            <div class="title-wrap fade">
+                <div class="title">
+                    <svg preserveAspectRatio="xMidYMid meet" data-bbox="26 20 148.999 160.001" width="200" height="200" viewBox="26 20 148.999 160.001" xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation" aria-hidden="true" aria-labelledby="svgcid-2uheygw9rvkf"><title id="svgcid-2uheygw9rvkf"></title>
+                        <g>
+                            <path fill-rule="evenodd" d="M115.12 20.004c19.855-.221 39.097 8.017 50.396 24.742 12.798 18.944 8.233 40.805 9.341 61.895 2.845 54.1-37.294 60.649-82.147 71.32-46.912 11.159-72.85-25.113-65.465-68.702 3.766-22.226 15.96-43.06 30.642-59.897C74.82 29.947 92.493 29.007 115.12 20.004" fill="#FFD302" data-color="1"></path>
+                        </g>
+                    </svg>
+                    <h2>ABOUT<br>TALECREW</h2>
+                </div>
+                <div class="bottom-line"></div>
+            </div>
+            <div class="content-wrap fade down">
+                <div class="content">
+                    <h3>재미있는 이야기를 효율적으로 만들기 위해 콘텐츠를 사랑하는 사람들이 모였습니다.</h3>
+                    <p class="about-text">2013년 200억... 2017년 3000억, 2018년 4000억, 202년 600억, 매우 빠른 속도로 성정해온 국내 웹소설 시장 '원천 스토리 IP'로 주목 받고 성장하는 이 시장의 성장이 계속 되려면,</p>
+                    <p class="about-text">새롭게 유입되는 다양한 독자들이 원하는 재미를 빠르게 해소해 줄 수 있는 스토리 창작 팀이 필요합니다.</p>
+                    <p class="about-text">뛰어난 창작자들이 새로운 장르를 만들고 독자들에게 선택 받는 신선한 이야기를 만들어 왔으며, 시장의 성장을 이끌어왔지만.</p>
+                    <p class="about-text">이제는, 더욱 풍성하고 다채로운 콘텐츠 시장을 위해 '다함께' 힘을 모아야 할 때라고 테일크루는 생각합니다.</p>
+                </div>
+            </div>
+        </div>
+        <div class="business-content">
+            <div class="title-wrap fade">
+                <div class="title">
+                    <svg preserveAspectRatio="xMidYMid meet" data-bbox="26 20 148.999 160.001" width="200" height="200" viewBox="26 20 148.999 160.001" xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation" aria-hidden="true" aria-labelledby="svgcid-2uheygw9rvkf" style="margin-top: -1rem;"><title id="svgcid-2uheygw9rvkf"></title>
+                        <g>
+                            <path fill-rule="evenodd" d="M115.12 20.004c19.855-.221 39.097 8.017 50.396 24.742 12.798 18.944 8.233 40.805 9.341 61.895 2.845 54.1-37.294 60.649-82.147 71.32-46.912 11.159-72.85-25.113-65.465-68.702 3.766-22.226 15.96-43.06 30.642-59.897C74.82 29.947 92.493 29.007 115.12 20.004" fill="#FFD302" data-color="1"></path>
+                        </g>
+                    </svg>
+                    <h2>BUSINESS</h2>
+                </div>
+                <div class="bottom-line"></div>
+            </div>
+            <div class="content-wrap fade down">
+                <div class="content">
+                    <div class="first-icon flex-column align-center">
+                        <svg preserveAspectRatio="xMidYMid meet" data-bbox="35.5 28 129 144" viewBox="35.5 28 129 144" height="200" width="200" xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation" aria-hidden="true"><defs><style>#comp-kvssecq8 svg [data-color="1"] {fill: #414141;}</style></defs>
+                            <g>
+                                <path fill="#414141" d="M164.5 100v6h-87v-6h87z" data-color="1"></path>
+                                <path d="M131.5 103h-6v-6h-9v-6h12a3 3 0 0 1 3 3v9z" fill="#414141" data-color="1"></path>
+                                <path d="M143.5 103h-6v-9a3 3 0 0 1 3-3h15V61h-12v-6h15a3 3 0 0 1 3 3v36a3 3 0 0 1-3 3h-15v6z" fill="#414141" data-color="1"></path>
+                                <path d="M140.5 85h-9a3 3 0 0 1-3-3V31a3 3 0 0 1 3-3h9c4.963 0 9 4.037 9 9v39c0 4.963-4.037 9-9 9zm-6-6h6c1.655 0 3-1.346 3-3V37c0-1.654-1.345-3-3-3h-6v45z" fill="#414141" data-color="1"></path>
+                                <path fill="#414141" d="M68.5 148v15h-6v-15h6z" data-color="1"></path>
+                                <path d="M104.866 170.437L87.719 139H68.5c-11.578 0-21-9.42-21-21V85c0-8.271 6.729-15 15-15h12c.624 0 1.236.195 1.743.558L96.461 85H110.5a2.998 2.998 0 0 1 2.979 2.657c.041.344.914 8.489-3.876 13.862-2.654 2.974-6.39 4.481-11.104 4.481h-12a3.003 3.003 0 0 1-1.664-.504l-18-12 3.328-4.992L87.408 100H98.5c2.974 0 5.139-.81 6.624-2.474 1.679-1.884 2.227-4.551 2.388-6.526H95.5a2.999 2.999 0 0 1-1.743-.558L73.539 76H62.5c-4.963 0-9 4.037-9 9v33c0 8.271 6.729 15 15 15h21c1.099 0 2.109.599 2.634 1.563l18 33-5.268 2.874z" fill="#414141" data-color="1"></path>
+                                <path d="M118.293 169.939l-14.484-43.956C102.145 121.23 97.592 118 92.5 118h-15a3 3 0 0 1-3-3V97h6v15h12a18.019 18.019 0 0 1 16.989 12.053l14.505 44.008-5.701 1.878z" fill="#414141" data-color="1"></path>
+                                <path d="M83.5 151h-21c-14.889 0-27-12.113-27-27V79h6v45c0 11.58 9.422 21 21 21h21v6z" fill="#414141" data-color="1"></path>
+                                <path d="M66.004 125.664L60.895 118H38.5v-6h24c1.002 0 1.939.501 2.496 1.336l6 9-4.992 3.328z" fill="#414141" data-color="1"></path>
+                                <path d="M83.5 172h-12a2.995 2.995 0 0 1-2.121-.879l-3.879-3.879-3.879 3.879A2.995 2.995 0 0 1 59.5 172h-12v-6h10.758l5.121-5.121a2.998 2.998 0 0 1 4.242 0L72.742 166H83.5v6z" fill="#414141" data-color="1"></path>
+                                <path d="M67 67c-9.097 0-16.5-7.113-16.5-15.855v-4.289C50.5 38.113 57.903 31 67 31s16.5 7.113 16.5 15.855v4.289C83.5 59.887 76.097 67 67 67zm0-30c-5.789 0-10.5 4.421-10.5 9.855v4.289C56.5 56.579 61.211 61 67 61s10.5-4.421 10.5-9.855v-4.289C77.5 41.421 72.789 37 67 37z" fill="#414141" data-color="1"></path>
+                            </g>
+                        </svg>
+                        <p class="business-text">웹소설<br>스토리 제작</p>
+                    </div>
+
+                    <div class="second-icon flex-column align-center">
+                        <svg preserveAspectRatio="xMidYMid meet" data-bbox="34.5 28 130.999 144" viewBox="34.5 28 130.999 144" height="200" width="200" xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation" aria-hidden="true"><defs><style>#comp-kvssecqb svg [data-color="1"] {fill: #414141;}</style></defs>
+                            <g>
+                                <path d="M129.773 85.01h-5.955v-3.666c0-6.686-15.453-11.379-23.818-11.379-8.366 0-23.818 4.693-23.818 11.379v3.666h-5.955v-3.666c0-12.378 21.011-17.378 29.773-17.378 8.763 0 29.773 5 29.773 17.378v3.666z" fill="#414141" data-color="1"></path>
+                                <path d="M93.489 172H80.293a2.98 2.98 0 0 1-2.836-2.087l-8.853-27.909H51.749c-9.51 0-17.249-7.796-17.249-17.378V88.597c0-6.94 5.604-12.586 12.492-12.586h.449c6.585 0 12.935 2.783 17.423 7.635l9.589 10.363h16.615c.834 0 1.63.353 2.194.973.564.618.845 1.449.772 2.285-.436 5.099-4.108 14.741-14.875 14.741H63.643a2.97 2.97 0 0 1-2.128-.901l-.22-.227v7.127h11.863c6.303 0 11.944 4.045 14.034 10.065.036.104.067.211.092.318l9.106 39.939a3.011 3.011 0 0 1-.573 2.541 2.965 2.965 0 0 1-2.328 1.13zm-11.021-5.999h7.282l-8.23-36.094c-1.295-3.536-4.636-5.901-8.362-5.901h-14.84c-1.644 0-2.977-1.343-2.977-3v-16.255l-8.382-8.627 4.257-4.198 13.68 14.081H79.16c4.947 0 7.176-3.315 8.17-5.999H73.158a2.966 2.966 0 0 1-2.178-.955L60.509 87.736a17.864 17.864 0 0 0-13.068-5.725h-.449c-3.605 0-6.537 2.954-6.537 6.587v36.028c0 6.275 5.066 11.379 11.294 11.379h19.03a2.98 2.98 0 0 1 2.836 2.087l8.853 27.909z" fill="#414141" data-color="1"></path>
+                                <path d="M55.341 73.011c-8.07 0-14.886-6.868-14.886-14.998v-3c0-8.139 6.817-15.014 14.886-15.014s14.886 6.875 14.886 15.014v3c0 8.269-6.678 14.998-14.886 14.998zm0-27.013c-4.841 0-8.932 4.129-8.932 9.015v3c0 4.877 4.091 8.999 8.932 8.999s8.932-4.122 8.932-8.999v-3c0-4.886-4.091-9.015-8.932-9.015z" fill="#414141" data-color="1"></path>
+                                <path d="M119.149 172h-13.194a2.966 2.966 0 0 1-2.329-1.131 3.022 3.022 0 0 1-.573-2.541l9.106-39.939c.023-.107.055-.214.09-.318 2.093-6.02 7.734-10.065 14.037-10.065h12.418v-7.685l-.797.804a2.963 2.963 0 0 1-2.108.882H120.84c-10.766 0-14.439-9.642-14.875-14.741a3.005 3.005 0 0 1 .77-2.285 2.968 2.968 0 0 1 2.195-.973h16.061l9.586-10.363c4.489-4.852 10.839-7.635 17.422-7.635h.451c7.074 0 13.049 5.764 13.049 12.586v36.028c0 9.419-8.153 17.378-17.805 17.378H130.84l-8.856 27.911a2.979 2.979 0 0 1-2.835 2.087zm-9.455-5.999h7.28l8.856-27.911a2.98 2.98 0 0 1 2.835-2.086h19.03c6.423 0 11.851-5.211 11.851-11.379V88.597c0-3.509-3.315-6.587-7.094-6.587h-.451a17.857 17.857 0 0 0-13.066 5.727l-10.47 11.316a2.968 2.968 0 0 1-2.178.955h-13.616c.991 2.682 3.222 5.999 8.17 5.999h13.723l13.962-14.1 4.216 4.236-8.083 8.164v16.699c0 1.657-1.332 3-2.977 3h-15.395c-3.727 0-7.068 2.365-8.365 5.901l-8.228 36.094z" fill="#414141" data-color="1"></path>
+                                <path d="M144.659 73.011c-8.068 0-14.886-6.868-14.886-14.998v-3c0-8.139 6.818-15.014 14.886-15.014s14.886 6.875 14.886 15.014v3c0 8.13-6.818 14.998-14.886 14.998zm0-27.013c-4.841 0-8.932 4.129-8.932 9.015v3c0 4.877 4.091 8.999 8.932 8.999s8.932-4.122 8.932-8.999v-3c0-4.886-4.091-9.015-8.932-9.015z" fill="#414141" data-color="1"></path>
+                                <path fill="#414141" d="M141.682 106.007v5.999H58.318v-5.999h83.364z" data-color="1"></path>
+                                <path d="M100 61.012c-8.07 0-14.886-6.868-14.886-14.998v-3C85.114 34.875 91.93 28 100 28c8.068 0 14.886 6.875 14.886 15.014v3c0 8.131-6.818 14.998-14.886 14.998zm0-27.013c-4.841 0-8.932 4.129-8.932 9.015v3c0 4.877 4.091 8.999 8.932 8.999s8.932-4.122 8.932-8.999v-3c0-4.886-4.091-9.015-8.932-9.015z" fill="#414141" data-color="1"></path>
+                            </g>
+                        </svg>
+                        <p class="business-text">스토리 집단창작<br>프로세스 개발</p>
+                    </div>
+
+                    <div class="third-icon flex-column align-center">
+                        <svg preserveAspectRatio="xMidYMid meet" data-bbox="28 32.8 144 134.4" viewBox="28 32.8 144 134.4" height="200" width="200" xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation" aria-hidden="true"><defs><style>#comp-kvssecqd1 svg [data-color="1"] {fill: #414141;}</style></defs>
+                            <g>
+                                <path d="M160 144.031H40c-6.617 0-12-5.393-12-12.025V44.825C28 38.193 33.383 32.8 40 32.8h120c6.617 0 12 5.393 12 12.025v87.181c0 6.632-5.383 12.025-12 12.025zM40 38.812c-3.309 0-6 2.698-6 6.012v87.181c0 3.314 2.691 6.012 6 6.012h120c3.309 0 6-2.698 6-6.012v-87.18c0-3.314-2.691-6.012-6-6.012H40z" fill="#414141" data-color="1"></path>
+                                <path d="M127.879 167.2l-5.121-5.132H74.242l-5.121 5.132-4.242-4.251 6-6.012a2.996 2.996 0 0 1 2.121-.881h51c.795 0 1.559.317 2.121.881l6 6.012-4.242 4.251z" fill="#414141" data-color="1"></path>
+                                <path d="M118 153.05h-6v-9.019H85v9.019h-6v-12.025a3.002 3.002 0 0 1 3-3.006h33c1.657 0 3 1.345 3 3.006v12.025z" fill="#414141" data-color="1"></path>
+                                <path fill="#414141" d="M169 119.981v6.012H31v-6.012h138z" data-color="1"></path>
+                                <path fill="#414141" d="M106 129v6.012H91V129h15z" data-color="1"></path>
+                            </g>
+                        </svg>
+                        <p class="business-text">OSMU<br>시스템 구축</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="novel-title yellow">TALECREW</p>
+    </section>
+    <div class="novel-title-wrap">
+        <p class="novel-title">ORIGINAL STORY</p>
+    </div>
+    {% if novels %}
+    <section id="novel">
+        <ul class="novel-list slider autoplay">
+            {% for novel in novels %}
+            <li class="novel-item">
+                <div class="image-wrap">
+                    <img class="novel-img" src="{{ novel.cover.url }}" alt="{{ novel.title }} image">
+                </div>
+                <div class="desc-wrap ">
+                    <div class="title">{{ novel.title }}</div>
+                    <div class="desc">{{ novel.description }}</div>
+                    <button class="link-btn" data-url="{{ novel.link_to }}">Click here</button>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+    {% endif %}
+    <section id="recruit">
+        <div class="recruit-left fade left">
+            <p class="main-text">테일크루의</p>
+            <p class="main-text">미래를 함께 만들어 나갈</p>
+            <p class="main-text" style="margin-bottom: 3rem;">소중한 인재를 찾고 있습니다.</p>
+            <p class="sub-text">장르불문 콘텐츠를 사랑하는 분들의 많은 지원 부탁드립니다.</p>
+        </div>
+        <div class="recruit-right fade">
+            <button class="recruit-btn" data-url="https://flash-snipe-ca1.notion.site/TALECREW-bd5482cd48a149ea9c166de7eaef1eff">채용 바로가기</button>
+        </div>
+    </section>
+
+    <img src="{% static 'img/index-character.webp' %}" alt="side novel character image" class="character">
+    <section id="core-values">
+        <div class="content-wrap">
+            <table class="content-table">
+                <thead>
+                    <tr>
+                        <th colspan="2" class="core-values-title fade">우리는 자유로운 소통을 통해 서로를 존중하고,<div class="mobile-only"></div> 세상을 놀라게 할 스토리를 만들고자 하는 열정있는 동료와 함께 합니다.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="fade left">
+                        <td class="key">열정적인</td>
+                        <td class="value">본인이 좋아하고, 재밌는 스토리에 대해 밤새 이야기할 수 있는 뜨거운 열정을 가진 동료</td>
+                    </tr>
+                    <tr class="fade right">
+                        <td class="key right">가치 지향적인</td>
+                        <td class="value">자신만의 재미에 사로잡혀 있지 않고, 내 옆의 동료, 더 나아가 다수의 독자들의 재미를 최우선의 가치로 두고 있는 동료</td>
+                    </tr>
+                    <tr class="fade left">
+                        <td class="key">솔직한</td>
+                        <td class="value">논리적 사고를 중요시하며, 테일크루와 동료들을 위해서 언제든 올바른 피드백을 할 수 있는 동료</td>
+                    </tr>
+                    <tr class="fade right">
+                        <td class="key right">장인정신이 있는</td>
+                        <td class="value">테일크루와 함께 세상을 놀라게 할 Super 'IP' 만들고 말겠다는 의지가 있는 동료</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="vision">
+        <div class="content-wrap fade right">
+            테일크루는 글로벌 콘텐츠 전쟁의 최전선에서,<br>
+            트렌드를 이끌고 만드는 종합 콘텐츠 회사를 꿈꾸고 있습니다.
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="left">
+        <img src="{% static 'img/logo-black.webp' %}" alt="footer logo">
+    </div>
+    <div class="right">
+        <div class="content-wrap">
+            <div class="top">
+                <p class="ceo">대표: 문희담</p>
+                <p class="address">위치: 경기도 성남시 분당구 판교역로 230, 삼환하이펙스 B동 409 - 410</p>
+            </div>
+            <div class="bottom">
+                <p class="mail"><a data-auto-recognition="true" href="mailto:accountancy@talecrew.com">accountancy@talecrew.com</a></p>
+                <p class="copy-right">@2021 TALECREW Corp. All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+</footer>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'js/slick.min.js' %}?v={% include 'versioning.html' %}"></script>
+    <script src="{% static 'js/index.js' %}?v={% include 'versioning.html' %}"></script>
+{% endblock %}
